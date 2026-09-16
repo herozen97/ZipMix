@@ -1,0 +1,39 @@
+ZipMix third-party notices
+==========================
+
+Software license
+----------------
+Unless otherwise noted, source code and documentation in this repository are
+released under the MIT License. See LICENSE.
+
+LargeST-derived data assets
+---------------------------
+The following files are geographic / identity metadata derived from the LargeST
+benchmark dataset (`ca_meta.csv` and related sensor lists). They are **not**
+covered by the MIT License of the ZipMix software. They remain subject to the
+LargeST dataset license:
+
+  Creative Commons Attribution-NonCommercial 4.0 International (CC BY-NC 4.0)
+  https://creativecommons.org/licenses/by-nc/4.0/
+
+Bundled derived assets:
+
+  benchmarks/largest/assets/sd_meta.csv
+  benchmarks/largest/assets/gba_meta.csv
+  benchmarks/largest/assets/gla_meta.csv
+  benchmarks/largest/prep/assets/reliable_nodes_sd.txt
+  benchmarks/largest/prep/assets/reliable_nodes_gba.txt
+  benchmarks/largest/prep/assets/reliable_nodes_gla.txt
+
+Raw LargeST traffic time series (HDF / NPZ packs) are **not** shipped in this
+repository. Obtain them from the official LargeST release and follow its terms.
+
+LargeST citation
+----------------
+Liu, Xu; Xia, Yutong; Liang, Yuxuan; Hu, Junfeng; Wang, Yiwei; Bai, Lei;
+Huang, Chao; Liu, Zhenguang; Hooi, Bryan; Zimmermann, Roger.
+LargeST: A Benchmark Dataset for Large-Scale Traffic Forecasting.
+Advances in Neural Information Processing Systems, 2023.
+
+  https://github.com/liuxu77/LargeST
+  https://arxiv.org/abs/2306.08259

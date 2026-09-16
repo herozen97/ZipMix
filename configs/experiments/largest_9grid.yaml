@@ -1,0 +1,37 @@
+# Paper benchmark experiment (LargeST 9-grid)
+# Grid: {sd, gba, gla} x {eval_2019, eval_2020, eval_2021}
+# Reported table values are the mean over seeds [42, 43, 44].
+# Prefer: python scripts/run_largest_grid.py --config configs/experiments/largest_9grid.yaml
+# Per-subset batch sizes used by the grid runner: sd=32, gba=16, gla=8.
+
+task:
+  hist_len: 12
+  pred_len: 12
+seed: 42
+seeds: [42, 43, 44]
+train:
+  epochs: 50
+  lr: 0.001
+  weight_decay: 0.0001
+  # Default for sd; override to 16 (gba) or 8 (gla), or use run_largest_grid.py
+  batch_size: 32
+model:
+  hidden_dim: 192
+  depth: 4
+  in_channels: 3
+  dropout: 0.1
+  zip_len: 6
+  scales: [3, 9, 27]
+  axis_mixer_mode: random
+  use_temporal_bottleneck: true
+  use_axis_mixer: true
+  use_graph_message: true
+  use_horizon_cascade: true
+  graph_k: 8
+  graph_hops: 2
+data:
+  type: largest
+  # Set to the LargeST root (directory that contains data/sd/...).
+  root: null
+  subset: sd
+  scenario: eval_2019

@@ -1,0 +1,10 @@
+# Fill author fields before public release (keep anonymous during double-blind review).
+cff-version: 1.2.0
+message: "If you use this software, please cite it as below."
+title: "ZipMix"
+authors:
+  - family-names: "TODO"
+    given-names: "TODO"
+version: 1.0.0
+date-released: 2026-08-27
+license: MIT

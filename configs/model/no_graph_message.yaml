@@ -1,0 +1,26 @@
+task:
+  hist_len: 12
+  pred_len: 12
+seed: 42
+train:
+  epochs: 50
+  lr: 0.001
+  weight_decay: 0.0001
+  batch_size: 32
+model:
+  hidden_dim: 192
+  depth: 4
+  in_channels: 3
+  dropout: 0.1
+  zip_len: 6
+  scales: [3, 9, 27]
+  axis_mixer_mode: random
+  use_temporal_bottleneck: true
+  use_axis_mixer: true
+  use_graph_message: false
+  use_horizon_cascade: true
+  graph_k: 8
+  graph_hops: 2
+data:
+  type: npz_window
+  root: null

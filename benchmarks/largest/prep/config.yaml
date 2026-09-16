@@ -1,0 +1,26 @@
+# LargeST temporal holdout protocols for ZipMix benchmark packs.
+# Protocol IDs name the test calendar year only (not drift severity).
+# 12-step lookback / 12-step horizon.
+
+lookback: 12
+horizon: 12
+stride: 1
+train_frac: 0.8
+add_tod: true
+add_dow: true
+exclude_years: [2017]
+min_valid_frac_in_window: 0.8
+
+splits:
+  eval_2019:
+    early: ["2018-01-01", "2018-12-31"]
+    eval: ["2019-01-01", "2019-12-31"]
+    timeline_years: [2018, 2019]
+  eval_2020:
+    early: ["2018-01-01", "2019-12-31"]
+    eval: ["2020-01-01", "2020-12-31"]
+    timeline_years: [2018, 2019, 2020]
+  eval_2021:
+    early: ["2018-01-01", "2019-12-31"]
+    eval: ["2021-01-01", "2021-12-31"]
+    timeline_years: [2018, 2019, 2021]
