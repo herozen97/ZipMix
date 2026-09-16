@@ -23,7 +23,7 @@ mlruns/
 .idea/
 .vscode/
 demo_pack/
-data/
+/data/
 **/LATEST/
 *.swp
 *~
