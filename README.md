@@ -114,16 +114,18 @@ docs/                 # MODEL.md, DATA.md
 
 ## Citation
 
+If you use ZipMix, please cite:
+
 ```bibtex
-@software{zipmix2026,
-  title  = {ZipMix},
-  author = {TODO},
+@software{huang2026zipmix,
+  title  = {Temporal Compression and Shared-Weight Node Mixing for Traffic Forecasting under Distribution Shift},
+  author = {Huang, Zongyuan and Wang, Weipeng and Yang, Jinming and Jin, Yaohui and Xu, Yanyan},
   year   = {2026},
-  url    = {TODO}
+  note   = {Software release}
 }
 ```
 
-Update [CITATION.cff](CITATION.cff) when publishing.
+Software metadata: [CITATION.cff](CITATION.cff).
 
 ## License
 

@@ -1,10 +1,17 @@
-# Fill author fields before public release (keep anonymous during double-blind review).
 cff-version: 1.2.0
 message: "If you use this software, please cite it as below."
-title: "ZipMix"
+title: "Temporal Compression and Shared-Weight Node Mixing for Traffic Forecasting under Distribution Shift"
 authors:
-  - family-names: "TODO"
-    given-names: "TODO"
+  - family-names: "Huang"
+    given-names: "Zongyuan"
+  - family-names: "Wang"
+    given-names: "Weipeng"
+  - family-names: "Yang"
+    given-names: "Jinming"
+  - family-names: "Jin"
+    given-names: "Yaohui"
+  - family-names: "Xu"
+    given-names: "Yanyan"
 version: 1.0.0
 date-released: 2026-08-27
 license: MIT
